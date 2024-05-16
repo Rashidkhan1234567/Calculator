@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="all">
+      <input type="text" id="display" readonly/>
+      <!-- <p id="display" aria-disabled="true"></p> -->
+      <div class="btn">
+        <button type="button" class="button" onclick="all_Clear()">AC</button>
+        <button type="button" class="button" onclick="singleClear()">C</button>
+        <button type="button" class="button" onclick="operator('%')">%</button>
+        <button type="button" class="button" onclick="operator('/')">/</button>
+        <button type="button" class="button" onclick="int(7)">7</button>
+        <button type="button" class="button" onclick="int(8)">8</button>
+        <button type="button" class="button" onclick="int(9)">9</button>
+        <button type="button" class="button" onclick="operator('*')">x</button>
+        <button type="button" class="button" onclick="int(4)">4</button>
+        <button type="button" class="button" onclick="int(5)">5</button>
+        <button type="button" class="button" onclick="int(6)">6</button>
+        <button type="button" class="button" onclick="operator('-')">-</button>
+        <button type="button" class="button" onclick="int(1)">1</button>
+        <button type="button" class="button" onclick="int(2)">2</button>
+        <button type="button" class="button" onclick="int(3)">3</button>
+        <button type="button" class="button plus" onclick="operator('+')">+</button>
+        <button type="button" class="button" onclick="int('00')">00</button>
+        <button type="button" class="button" onclick="int(0)">0</button>
+        <button type="button" class="button" onclick="int('.')">.</button>
+        <button type="button" class="button" onclick="Calculate('=')">=</button>
+      </div>
+    </div>
+
+    <!-- <p id="count">0</p>
+    <button type="button" id="button" onclick="increment()">increment</button>
+    <button type="button" id="button1" onclick="decrement()">decrement</button>
+    <button type="button" id="button2" onclick="reset()">reset</button> -->
+    <script src="app.js"></script>
+  </body>
+</html>
